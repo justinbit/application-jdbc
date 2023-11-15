@@ -60,7 +60,12 @@ public class CustomPersistence implements PersistenceUnitInfo {
 
     @Override
     public List<String> getManagedClassNames() {
-        return List.of("");
+        return List.of(
+                "sr.bitdynamics.application.demo.entities.Role",
+                "sr.bitdynamics.application.demo.entities.EmployeeFunction",
+                "sr.bitdynamics.application.demo.entities.Department",
+                "sr.bitdynamics.application.demo.entities.Employee"
+        );
     }
 
     @Override
